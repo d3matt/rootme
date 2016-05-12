@@ -1,5 +1,3 @@
-MODFLAGS: -Dsubsys_initcall=module_init
-
 all:
 	make -C /lib/modules/$(shell uname -r)/build M=$$PWD
 
@@ -8,4 +6,4 @@ clean:
 
 obj-m += rootme.o
 
-rootme-objs := sunxi-debug.o
+rootme-objs := rootme_main.o

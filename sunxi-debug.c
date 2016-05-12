@@ -89,4 +89,4 @@ static int sunxi_debug_init(void)
 	return ret;
 }
 
-module_init(sunxi_debug_init);
+subsys_initcall(sunxi_debug_init);
